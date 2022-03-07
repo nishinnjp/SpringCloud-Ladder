@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    config:
+      # http://localhost:8888/userservice-application/default/master
+      uri: http://localhost:8888   #config server url
+      name: userservice-application
+      label: master
+      profile: default    #default/dev/prod
+  config:
+    import: optional:configserver:http://localhost:8888
+mybatis:
+  type-aliases-package: com.macro.spring.cloud.ladder.user.domain
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com.macro.spring.cloud: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.macro.spring.cloud.ladder</groupId>
+    <artifactId>ladder-dependencies</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <inceptionYear>2022-Now</inceptionYear>
+    <description>Common-Dependencies</description>
+
+    <!-- 软件配置管理：配合 maven-release-plugin 插件使用 -->
+    <scm>
+        <connection>scm:git:http://gitlab.funtl.com/ladder/ladder-dependencies.git</connection>
+        <developerConnection>scm:git:http://gitlab.funtl.com/ladder/ladder-dependencies.git</developerConnection>
+        <url>http://gitlab.funtl.com/ladder/ladder-dependencies</url>
+        <tag>1.0.0-SNAPSHOT</tag>
+    </scm>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- Spring Projects -->
+        <spring-cloud.version>2021.0.1</spring-cloud.version>
+        <spring-boot.version>2.6.3</spring-boot.version>
+        <!--<spring-cloud-alibaba.verion>2.2.1.RELEASE</spring-cloud-alibaba.verion>-->
+
+        <!-- DataSource -->
+        <HikariCP.version>3.4.5</HikariCP.version>
+        <!-- mysql -->
+        <mysql.version>8.0.20</mysql.version>
+
+        <!-- Cloud Service -->
+        <qiniu.version>7.2.29</qiniu.version>
+        <!-- Tools -->
+        <mybatis.version>2.2.2</mybatis.version>
+        <mybatis-plus.version>3.3.1</mybatis-plus.version>
+        <hutool.version>5.3.5</hutool.version>
+        <lombok.version>1.18.22</lombok.version>
+
+        <junit.version>4.13.2</junit.version>
+
+        <!-- Projects -->
+        <!--SNAPSHOT
+        <ladder.version>1.0.0-SNAPSHOT</ladder.version>
+        <ladder.development.version>1.0.0-SNAPSHOT</ladder.development.version>
+        -->
+        <!--RELEASE-->
+        <ladder.version>1.0.0.RELEASE</ladder.version>
+        <ladder.development.version>1.0.1-SNAPSHOT</ladder.development.version>
+    </properties>
+
+    <developers>
+        <developer>
+            <id>macro</id>
+            <name>macro shen</name>
+            <email>macro.shen@gmail.com</email>
+        </developer>
+    </developers>
+
+    <!-- publish to Nexus -->
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://nexus.funtl.com/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>http://nexus.funtl.com/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Spring Boot -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Spring Cloud -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Spring Cloud Alibaba -->
+            <!--
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.verion}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            -->
+            <!-- DataSource -->
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP</artifactId>
+                <version>${HikariCP.version}</version>
+            </dependency>
+
+            <!-- mysql驱动 -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <!--mybatis-->
+            <!--
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+            -->
+
+            <!-- MyBatisPlus -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-core</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <!-- HuTool -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+
+
+            <!-- lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+            <!-- 七牛云 -->
+            <dependency>
+                <groupId>com.qiniu</groupId>
+                <artifactId>qiniu-java-sdk</artifactId>
+                <version>${qiniu.version}</version>
+            </dependency>
+
+            <!-- JUNIT -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <profiles>
+        <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <!-- 用于自动发布 RELEASE TAG -->
+                <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
+                <!-- 配合 maven-release-plugin 插件发布到 Git（GitLab，GitHub 等） -->
+                <maven-scm-provider-jgit-plugin.version>1.12.0</maven-scm-provider-jgit-plugin.version>
+                <!-- Spring beautify plugin -->
+                <spring-javaformat-maven-plugin.version>0.0.30</spring-javaformat-maven-plugin.version>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>io.spring.javaformat</groupId>
+                        <artifactId>spring-javaformat-maven-plugin</artifactId>
+                        <version>${spring-javaformat-maven-plugin.version}</version>
+                    </plugin>
+
+                    <!-- mvn scm -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-release-plugin</artifactId>
+                        <version>${maven-release-plugin.version}</version>
+                        <configuration>
+                            <providerImplementations>
+                                <git>jgit</git>
+                            </providerImplementations>
+                            <username>root</username>
+                            <password>12345678</password>
+                            <tagBase>${project.artifactId}-${project.version}</tagBase>
+                            <goals>-f pom.xml deploy</goals>
+                            <releaseLabel>${ladder.version}</releaseLabel>
+                            <releaseVersion>${ladder.version}</releaseVersion>
+                            <developmentVersion>${ladder.development.version}</developmentVersion>
+                            <preparationGoals>clean verify</preparationGoals>
+                        </configuration>
+                        <dependencies>
+                            <dependency>
+                                <groupId>org.apache.maven.scm</groupId>
+                                <artifactId>maven-scm-provider-jgit</artifactId>
+                                <version>${maven-scm-provider-jgit-plugin.version}</version>
+                            </dependency>
+                        </dependencies>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

@@ -1,0 +1,27 @@
+server:
+  port: 8888 # server port
+spring:
+  application:
+    name: configserver # config server name
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://gitlab.funtl.com/ladder/config-repo.git
+          username: root
+          password: 12345678
+eureka:
+  client:
+    service-url:  # eureka url info
+      defaultZone: http://127.0.0.1:10086/eureka
+#management:
+#  endpoints:
+#    enabled-by-default: true
+#    web:
+#      exposure:
+#        include:
+#          - info
+#          - health
+#          - refresh
+#          - busrefresh
+

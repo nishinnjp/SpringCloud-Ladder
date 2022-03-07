@@ -1,0 +1,20 @@
+server:
+  port: 9001 # server port
+spring:
+  application:
+    name: first-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://gitlab.funtl.com/ladder/config-server.git
+          username: root
+          password: 12345678
+eureka:
+  client:
+    service-url:  # eureka url info
+      defaultZone: http://127.0.0.1:10086/eureka
+my:
+  args:
+    int: 22222
+    str: 'test string 22222'

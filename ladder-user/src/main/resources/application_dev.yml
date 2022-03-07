@@ -1,0 +1,43 @@
+server:
+  port: 8091
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql.funtl.com:3306/cloud-user?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+    hikari:
+      minimum-idle: 5
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      auto-commit: true
+      pool-name: MyHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  application:
+    name: userservice
+eureka:
+  client:
+    service-url:  # eureka url info
+      defaultZone: http://127.0.0.1:10086/eureka
+#  cloud:
+#    nacos:
+#      server-addr: nacos:8848 # nacos服务地址
+#      discovery:
+#        namespace: 4d6ce343-9e1b-44df-a90f-2cf2b6b3d177 # dev环境
+#        ephemeral: false # 是否是临时实例
+mybatis:
+  type-aliases-package: com.macro.spring.cloud.ladder.user.domain
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com.macro.spring.cloud: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+my:
+  args:
+    int: 120
+    str: 'test string 120'

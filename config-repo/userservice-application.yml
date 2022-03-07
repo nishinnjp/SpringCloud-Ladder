@@ -1,0 +1,44 @@
+server:
+  port: 8082 # server port
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql.funtl.com:3306/cloud-user?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+    hikari:
+      minimum-idle: 5
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      auto-commit: true
+      pool-name: MyHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  application:
+    name: userservice
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://gitlab.funtl.com/ladder/config-server.git
+          username: root
+          password: 12345678
+eureka:
+  client:
+    service-url:  # eureka url info
+      defaultZone: http://127.0.0.1:10086/eureka
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include:
+          - info
+          - health
+          - refresh      
+my:
+  args:
+    int: 33333
+    str: 'test string 33333'

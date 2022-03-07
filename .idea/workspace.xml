@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6b649d23-babf-4492-ae4c-0d34131de833" name="Default Changelist" comment="init">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/SpringCloud-Ladder.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/userservice-application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/com/macro/spring/cloud/ladder/config/ConfigApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/test_config-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/test_config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/bin/release.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/macro/spring/cloud/eureka/EurekaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/bin/release.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/macro/spring/cloud/ladder/feign/client/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/macro/spring/cloud/ladder/feign/config/DefaultFeignConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/com/macro/spring/cloud/ladder/feign/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/gateway.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/macro/spring/cloud/ladder/gateway/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/macro/spring/cloud/ladder/gateway/filter/AuthorizeFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/macro/spring/cloud/ladder/gateway/filter/constant/FilterOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-common/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-common/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-common/bin/release.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-dependencies/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-dependencies/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-dependencies/bin/release.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-dependencies/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-order/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-order/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-order/bin/release.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-order/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-order/src/main/java/com/macro/spring/cloud/ladder/order/OrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-order/src/main/java/com/macro/spring/cloud/ladder/order/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-order/src/main/java/com/macro/spring/cloud/ladder/order/domain/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-order/src/main/java/com/macro/spring/cloud/ladder/order/dto/OrderDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-order/src/main/java/com/macro/spring/cloud/ladder/order/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-order/src/main/java/com/macro/spring/cloud/ladder/order/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-order/src/main/java/com/macro/spring/cloud/ladder/order/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-order/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-order/src/main/resources/com/macro/spring/cloud/ladder/order/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-order/src/test/java/com/macro/spring/cloud/order/test/OrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-parent/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-parent/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-parent/bin/release.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-parent/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-user/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-user/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-user/bin/release.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-user/src/main/java/com/macro/spring/cloud/ladder/user/UserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-user/src/main/java/com/macro/spring/cloud/ladder/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-user/src/main/java/com/macro/spring/cloud/ladder/user/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-user/src/main/java/com/macro/spring/cloud/ladder/user/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-user/src/main/java/com/macro/spring/cloud/ladder/user/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-user/src/main/java/com/macro/spring/cloud/ladder/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-user/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-user/src/main/resources/application_dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-user/src/main/resources/com/macro/spring/cloud/ladder/user/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ladder-user/src/test/java/com/macro/spring/cloud/user/test/UserTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="262mtNZrx9YGfaqerTL4EgKGBdE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RunManager" selected="Batch.release (2)">
+    <configuration name="release (1)" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="ladder-parent" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\studyCode\SpringCloud-Ladder\ladder-parent\bin" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="release.bat" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="release (2)" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="ladder-common" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\studyCode\SpringCloud-Ladder\ladder-common\bin" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="release.bat" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="release" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="ladder-dependencies" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\studyCode\SpringCloud-Ladder\ladder-dependencies\bin" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="release.bat" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Batch.release (2)" />
+        <item itemvalue="Batch.release (1)" />
+        <item itemvalue="Batch.release" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b649d23-babf-4492-ae4c-0d34131de833" name="Default Changelist" comment="" />
+      <created>1646630269881</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646630269881</updated>
+      <workItem from="1646630272157" duration="1074000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+</project>

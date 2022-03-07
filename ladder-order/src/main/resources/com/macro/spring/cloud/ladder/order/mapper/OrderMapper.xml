@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.macro.spring.cloud.ladder.order.mapper.OrderMapper">
+    <resultMap id="BaseResultMap" type="com.macro.spring.cloud.ladder.order.domain.Order">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="user_id" jdbcType="BIGINT" property="userId" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="price" jdbcType="BIGINT" property="price" />
+        <result column="num" jdbcType="VARCHAR" property="num" />
+    </resultMap>
+    <resultMap id="BaseResultMapALL" extends="BaseResultMap" type="com.macro.spring.cloud.ladder.order.domain.Order">
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    </resultMap>
+
+    <select id="queryOrderById" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select
+            id, user_id, name, price, num
+        from tb_order
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+</mapper>
